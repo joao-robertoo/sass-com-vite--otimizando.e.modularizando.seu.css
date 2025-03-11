@@ -14,25 +14,31 @@ select {
   border: 1px solid variables.$form-border-color;
   border-radius: variables.$border-radius;
   @include mixins.transition(border-color, box-shadow);
+
   &:focus {
     border-color: variables.$accent-color;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(variables.$accent-color, 0.25);
   }
 }
+
 .form-group {
   margin-bottom: variables.$margin-bottom-regular;
+
   label {
     display: block;
     margin: 0.5rem;
   }
 }
+
 .contact {
   padding: 2rem;
+
   h3 {
     text-align: center;
     margin-bottom: variables.$margin-bottom-regular;
   }
+
   .contact-container {
     width: 50%;
     max-width: 65%;
