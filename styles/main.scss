@@ -3,4 +3,6 @@
 @use 'layout/header';
 @use "components/cards";
 @use "pages/home";
-@use 'utils/mixins'
+@use 'utils/mixins';
+@use 'components/buttons';
+@use 'components/forms';
