@@ -25,6 +25,7 @@ select {
     font-size: 0.875rem;
     padding: 0.5rem;
   }
+
   @include mixins.respond-to(medium) {
     font-size: 0.95rem;
     padding: 0.6rem;
@@ -37,10 +38,10 @@ select {
   label {
     display: block;
     margin: 0.5rem;
-  }
 
-  @include mixins.respond-to(small) {
-    margin: 0.25rem;
+    @include mixins.respond-to(small) {
+      margin: 0.25rem;
+    }
   }
 }
 
@@ -54,6 +55,7 @@ select {
     @include mixins.respond-to(small) {
       font-size: 1.25rem;
     }
+
     @include mixins.respond-to(medium) {
       font-size: 1.5rem;
     }
@@ -73,6 +75,7 @@ select {
       margin: 3rem auto;
       width: 75%;
     }
+
     @include mixins.respond-to(medium) {
       padding: variables.$padding-regular;
       margin: 3rem auto;

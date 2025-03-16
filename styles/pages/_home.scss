@@ -34,6 +34,7 @@
       @include mixins.respond-to(medium) {
         font-size: 4rem;
       }
+
       @include mixins.respond-to(small) {
         font-size: 2.5rem;
         line-height: 4rem;
@@ -43,7 +44,7 @@
     p {
       font-size: 1.25rem;
       text-align: left;
-      @extend %base-p
+      @extend %base-p;
 
       @include mixins.respond-to(small) {
         font-size: variables.$font-size-base;
@@ -70,7 +71,7 @@
       font-size: 1.5rem;
       font-weight: 400;
       text-align: center;
-      @extend %base-p
+      @extend %base-p;
     }
   }
 }
@@ -93,7 +94,7 @@
   p {
     font-size: 1.25rem;
     text-align: left;
-    @extend %base-p
+    @extend %base-p;
   }
 }
 
@@ -124,6 +125,7 @@
     @include mixins.respond-to(medium) {
       flex-direction: column;
     }
+
     @include mixins.respond-to(small) {
       flex-direction: column;
     }
